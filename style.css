@@ -141,6 +141,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
+/* line 48, ../sass/_typography.scss */
+blockquote {
+  border-left: 5px solid #3b3b3b;
+  font-style: italic;
+  padding-left: 20px;
+  margin-left: -25px;
+}
+
 /* line 1, ../sass/_layout.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -185,7 +193,8 @@ h1, h2, h3, h4, h5, h6 {
     border: 0;
     overflow: hidden;
     *zoom: 1;
-    padding: 10px 0;
+    padding: 20px 0;
+    font-size: 24px;
   }
   /* line 60, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
   .nav li {
@@ -214,11 +223,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer
 ================*/
-/* line 33, ../sass/_layout.scss */
+/* line 34, ../sass/_layout.scss */
 footer {
   background: #3b3b3b;
   color: #fff;
   text-align: center;
+  font-size: 21px;
+  padding-top: 20px;
 }
 
 /* line 10, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */

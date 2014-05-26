@@ -23,7 +23,8 @@
   }
   @media (min-width: 769px) {
     @include horizontal-list(10px, left);
-    padding: 10px 0;
+    padding: 20px 0;
+    font-size: 24px;
   }
 }
 
@@ -34,6 +35,8 @@ footer {
   background: $footer-color;
   color: #fff;
   text-align: center;
+  font-size: 21px;
+  padding-top: 20px;
 }
 
 @include sticky-footer(100px, ".root", "#root_footer", "#footer")
