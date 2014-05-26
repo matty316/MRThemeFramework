@@ -3,7 +3,7 @@ $base-line-height: 24px;
 @include establish-baseline;
 
 body {
-  font-family: 'Radley', serif;
+  @include radley;
   color: $text-color;
 }
 
@@ -48,21 +48,24 @@ ol {
   list-style: decimal;
 }
 
-nav, footer {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+ul, ol {
+  margin-left: 20px;
+  @media (min-width: 769) {
+    margin-left: 0;
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+nav, footer, h1, h2, h3, h4, h5, h6  {
+  @include lato;
 }
 
 blockquote {
   border-left: 5px solid $text-color;
   font-style: italic;
   padding-left: 20px;
-  margin-left: -25px;
+  @media (min-width: 769) {
+    margin-left: -25px;
+  }
 }
 
 .meta {

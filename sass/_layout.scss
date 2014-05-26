@@ -12,11 +12,27 @@
 
 /* Navigation
 ================*/
+body {
+  padding-top: 35px;
+  @media (min-width: 769) {
+    padding-top: 0;
+  }
+}
+.admin-bar nav {
+  margin-top: 45px;
+  @media (min-width: 769) {
+    margin-top: 0;
+  }
+}
 
 nav {
   @include clearfix;
   background: $nav-color;
   color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   #menu-button {
     display: block;
     text-align: right;
@@ -24,6 +40,7 @@ nav {
   }
   ul {
     margin-bottom: 0;
+    list-style: none;
   }
   #nav {
     display: none;
@@ -39,11 +56,10 @@ nav {
     @include horizontal-list(10px, left);
     padding: 15px 0;
     font-size: 24px;
+    position: static;
     .sub-menu {
   		display: none;
     }
-
-  	
     #nav {
       @include clearfix;
       display: block;
@@ -52,6 +68,15 @@ nav {
     #menu-button {
       display: none;
     }
+  }
+}
+
+.header-img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  @media (min-width: 769px) {
+    width: 600px;
   }
 }
 
@@ -73,5 +98,16 @@ footer {
 ================*/
 
 .excerpt {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+}
+
+/* Floats
+================*/
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
 }

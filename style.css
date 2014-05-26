@@ -150,26 +150,36 @@ ol {
 }
 
 /* line 51, ../sass/_typography.scss */
-nav, footer {
+ul, ol {
+  margin-left: 20px;
+}
+@media (min-width: 769) {
+  /* line 51, ../sass/_typography.scss */
+  ul, ol {
+    margin-left: 0;
+  }
+}
+
+/* line 58, ../sass/_typography.scss */
+nav, footer, h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
 
-/* line 56, ../sass/_typography.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-}
-
-/* line 61, ../sass/_typography.scss */
+/* line 62, ../sass/_typography.scss */
 blockquote {
   border-left: 5px solid #3b3b3b;
   font-style: italic;
   padding-left: 20px;
-  margin-left: -25px;
+}
+@media (min-width: 769) {
+  /* line 62, ../sass/_typography.scss */
+  blockquote {
+    margin-left: -25px;
+  }
 }
 
-/* line 68, ../sass/_typography.scss */
+/* line 71, ../sass/_typography.scss */
 .meta {
   color: #5b5b5b;
   border-bottom: 1px solid #ccc;
@@ -196,30 +206,57 @@ blockquote {
 
 /* Navigation
 ================*/
-/* line 16, ../sass/_layout.scss */
+/* line 15, ../sass/_layout.scss */
+body {
+  padding-top: 35px;
+}
+@media (min-width: 769) {
+  /* line 15, ../sass/_layout.scss */
+  body {
+    padding-top: 0;
+  }
+}
+
+/* line 21, ../sass/_layout.scss */
+.admin-bar nav {
+  margin-top: 45px;
+}
+@media (min-width: 769) {
+  /* line 21, ../sass/_layout.scss */
+  .admin-bar nav {
+    margin-top: 0;
+  }
+}
+
+/* line 28, ../sass/_layout.scss */
 nav {
   overflow: hidden;
   *zoom: 1;
   background: #3b3b3b;
   color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-/* line 20, ../sass/_layout.scss */
+/* line 36, ../sass/_layout.scss */
 nav #menu-button {
   display: block;
   text-align: right;
   padding: 10px 0;
 }
-/* line 25, ../sass/_layout.scss */
+/* line 41, ../sass/_layout.scss */
 nav ul {
   margin-bottom: 0;
+  list-style: none;
 }
-/* line 28, ../sass/_layout.scss */
+/* line 45, ../sass/_layout.scss */
 nav #nav {
   display: none;
   border-top: 1px solid #fff;
   padding: 10px 0;
 }
-/* line 33, ../sass/_layout.scss */
+/* line 50, ../sass/_layout.scss */
 nav a {
   color: white;
   text-decoration: none;
@@ -233,7 +270,7 @@ nav a:hover {
   text-decoration: underline;
 }
 @media (min-width: 769px) {
-  /* line 16, ../sass/_layout.scss */
+  /* line 28, ../sass/_layout.scss */
   nav {
     margin: 0;
     padding: 0;
@@ -242,6 +279,7 @@ nav a:hover {
     *zoom: 1;
     padding: 15px 0;
     font-size: 24px;
+    position: static;
   }
   /* line 60, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
   nav li {
@@ -266,26 +304,39 @@ nav a:hover {
   nav li.last {
     padding-right: 0;
   }
-  /* line 42, ../sass/_layout.scss */
+  /* line 60, ../sass/_layout.scss */
   nav .sub-menu {
     display: none;
   }
-  /* line 47, ../sass/_layout.scss */
+  /* line 63, ../sass/_layout.scss */
   nav #nav {
     overflow: hidden;
     *zoom: 1;
     display: block;
     border-top: none;
   }
-  /* line 52, ../sass/_layout.scss */
+  /* line 68, ../sass/_layout.scss */
   nav #menu-button {
     display: none;
   }
 }
 
+/* line 74, ../sass/_layout.scss */
+.header-img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  /* line 74, ../sass/_layout.scss */
+  .header-img {
+    width: 600px;
+  }
+}
+
 /* Footer
 ================*/
-/* line 62, ../sass/_layout.scss */
+/* line 87, ../sass/_layout.scss */
 footer {
   background: #3b3b3b;
   color: #fff;
@@ -321,37 +372,139 @@ html, body {
 
 /* Blog
 ================*/
-/* line 75, ../sass/_layout.scss */
+/* line 100, ../sass/_layout.scss */
 .excerpt {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
+/* Floats
+================*/
+/* line 107, ../sass/_layout.scss */
+.right {
+  float: right;
+}
+
+/* line 111, ../sass/_layout.scss */
+.left {
+  float: left;
+}
+
+/* Grid
+----------------------------------------------- */
+@media (min-width: 769px) {
+  /* line 6, ../sass/_grid.scss */
+  [class*='col-'] {
+    float: left;
+    padding-right: 20px;
+  }
+
+  /* line 10, ../sass/_grid.scss */
+  .col-1 {
+    width: 8.33333%;
+  }
+
+  /* line 13, ../sass/_grid.scss */
+  .col-2 {
+    width: 16.66667%;
+  }
+
+  /* line 16, ../sass/_grid.scss */
+  .col-3 {
+    width: 25%;
+  }
+
+  /* line 19, ../sass/_grid.scss */
+  .col-4 {
+    width: 33.33333%;
+  }
+
+  /* line 22, ../sass/_grid.scss */
+  .col-5 {
+    width: 41.66667%;
+  }
+
+  /* line 25, ../sass/_grid.scss */
+  .col-6 {
+    width: 50%;
+  }
+
+  /* line 28, ../sass/_grid.scss */
+  .col-7 {
+    width: 58.33333%;
+  }
+
+  /* line 31, ../sass/_grid.scss */
+  .col-8 {
+    width: 66.66667%;
+  }
+
+  /* line 34, ../sass/_grid.scss */
+  .col-9 {
+    width: 75%;
+  }
+
+  /* line 37, ../sass/_grid.scss */
+  .col-10 {
+    width: 83.33333%;
+  }
+
+  /* line 40, ../sass/_grid.scss */
+  .col-11 {
+    width: 91.66667%;
+  }
+
+  /* line 43, ../sass/_grid.scss */
+  .col-12 {
+    width: 100%;
+  }
+
+  /* line 46, ../sass/_grid.scss */
+  .row {
+    max-width: 600px;
+    clear: both;
+    margin: 0 auto;
+  }
+
+  /* line 51, ../sass/_grid.scss */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  [class*='col-']:last-of-type {
+    padding-right: 0;
+  }
+}
 /* Button
 =================*/
 /* line 4, ../sass/_components.scss */
 .btn {
   background: #5585ff;
   color: white;
-  padding: 10px;
-  border: 2px solid #3f63bf;
+  padding: 5px 10px;
+  border: 1px solid #3f63bf;
   border-bottom-width: 5px;
   box-shadow: inset 0 1px adjust-lighness(#5585ff, 10%);
   display: inline-block;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
 /* line 24, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .btn:hover {
   color: white;
 }
-/* line 13, ../sass/_components.scss */
+/* line 14, ../sass/_components.scss */
 .btn:hover {
   background: #4e7aea;
 }
-/* line 16, ../sass/_components.scss */
+/* line 17, ../sass/_components.scss */
 .btn:active {
   border-bottom-width: 2px;
   -webkit-transform: translate(0px, 3px);

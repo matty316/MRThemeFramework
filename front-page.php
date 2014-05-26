@@ -12,6 +12,16 @@
     <h1>Sorry, there is no content to display!</h1>
 
   <?php endif; ?>
+
+  <div class="row">
+    <div class="col-6">
+      <?php if ( dynamic_sidebar( 'front-left' ) ) ?>
+    </div>
+    <div class="col-6">
+      <?php if (dynamic_sidebar( 'front-right')); ?>
+    </div>
+  </div>
+
   <div id="root_footer"></div>
 </div>
 

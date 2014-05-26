@@ -3,8 +3,9 @@
     <title><?php bloginfo( 'name' ); ?></title>
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class(); ?>>
 
+    <a href="<?php bloginfo( 'url' ); ?>"><img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" alt="" class="header-img" /></a>
     <nav>
 
       <div class="container">

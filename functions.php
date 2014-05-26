@@ -36,3 +36,27 @@ function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
+
+$args = array(
+	'width'         => 600,
+	'default-image' => 'http://placekitten.com/600/100',
+);
+
+add_theme_support( 'custom-header', $args );
+
+function create_widget($name, $id, $description)
+{
+  register_sidebar(array(
+    'name' => __( $name ),
+    'id' => $id,
+    'description' => __( $description ),
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
+  ));
+
+}
+
+create_widget( 'Front Page Left', 'front-left', 'Displays on the left of the front page' );
+create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the front page' );

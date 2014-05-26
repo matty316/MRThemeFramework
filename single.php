@@ -12,6 +12,7 @@
     <h1>Sorry, there is no content to display!</h1>
 
   <?php endif; ?>
+  <?php comments_template(); ?>
   <div id="root_footer"></div>
 </div>
 
