@@ -1,0 +1,21 @@
+/*!
+Theme Name: MR Theme Framework
+Theme URI: http://mttrd.com
+Description: This is the theme framework for Matt Reed
+Author: MAtt Reed
+Author URI: http://mttrd.com
+Version: 1.0
+*/
+
+// Compass modules
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/layout";
+@import "compass/typography";
+
+//Partials
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "layout";

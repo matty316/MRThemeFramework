@@ -1,0 +1,247 @@
+/*!
+Theme Name: MR Theme Framework
+Theme URI: http://mttrd.com
+Description: This is the theme framework for Matt Reed
+Author: MAtt Reed
+Author URI: http://mttrd.com
+Version: 1.0
+*/
+/* line 17, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 61, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 5, ../sass/_typography.scss */
+body {
+  font-family: 'Radley', serif;
+  color: #3b3b3b;
+}
+
+/* line 10, ../sass/_typography.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+/* line 14, ../sass/_typography.scss */
+h2 {
+  font-size: 2.25em;
+  line-height: 1.33333em;
+}
+
+/* line 18, ../sass/_typography.scss */
+h3 {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+/* line 22, ../sass/_typography.scss */
+h4 {
+  font-size: 1.3125em;
+  line-height: 2.28571em;
+}
+
+/* line 26, ../sass/_typography.scss */
+h5 {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+}
+
+/* line 30, ../sass/_typography.scss */
+h6 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* line 34, ../sass/_typography.scss */
+p {
+  margin-bottom: 1.5em;
+}
+
+/* line 38, ../sass/_typography.scss */
+.nav, footer {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+/* line 43, ../sass/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+/* line 1, ../sass/_layout.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/_layout.scss */
+.container {
+  margin: 0 auto;
+  max-width: 85%;
+}
+@media (min-width: 769px) {
+  /* line 5, ../sass/_layout.scss */
+  .container {
+    max-width: 600px;
+  }
+}
+
+/* Navigation
+================*/
+/* line 16, ../sass/_layout.scss */
+.nav {
+  overflow: hidden;
+  *zoom: 1;
+  background: #3b3b3b;
+}
+/* line 19, ../sass/_layout.scss */
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+/* line 4, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+.nav a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 769px) {
+  /* line 16, ../sass/_layout.scss */
+  .nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1;
+    padding: 10px 0;
+  }
+  /* line 60, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  .nav li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* line 48, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  .nav li:first-child, .nav li.first {
+    padding-left: 0;
+  }
+  /* line 49, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  .nav li:last-child {
+    padding-right: 0;
+  }
+  /* line 50, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  .nav li.last {
+    padding-right: 0;
+  }
+}
+
+/* Footer
+================*/
+/* line 33, ../sass/_layout.scss */
+footer {
+  background: #3b3b3b;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 10, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+.root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -100px;
+}
+/* line 18, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+.root #root_footer {
+  height: 100px;
+}
+
+/* line 20, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 100px;
+}

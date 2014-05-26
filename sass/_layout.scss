@@ -1,0 +1,39 @@
+* {
+  @include box-sizing(border-box);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 85%;
+  @media ( min-width: 769px ){
+    max-width: 600px;
+  }
+}
+
+/* Navigation
+================*/
+
+.nav {
+  @include clearfix;
+  background: $nav-color;
+  a {
+    @include link-colors(#fff);
+    @include hover-link;
+
+  }
+  @media (min-width: 769px) {
+    @include horizontal-list(10px, left);
+    padding: 10px 0;
+  }
+}
+
+/* Footer
+================*/
+
+footer {
+  background: $footer-color;
+  color: #fff;
+  text-align: center;
+}
+
+@include sticky-footer(100px, ".root", "#root_footer", "#footer")
