@@ -6,3 +6,6 @@ TODO
 =====
 * Style forms
 * Fix sub menus
+* Image Gallery template
+* Most of the templates
+* Make it prettier
