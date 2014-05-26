@@ -4,15 +4,24 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <?php
 
-    $args = array(
-      'menu' => 'header-menu',
-      'container' => 'div',
-      'container_class' => 'nav',
-      'menu_class' => 'container'
-    );
+    <nav>
 
-    wp_nav_menu( $args );
+      <div class="container">
 
-    ?>
+        <a data-target="#" id="menu-button"><i class="fa fa-bars"></i></a>
+
+        <?php
+
+        $args = array(
+          'menu' => 'header-menu',
+          'container' => 'false',
+          'menu_id' => 'nav'
+        );
+
+        wp_nav_menu( $args );
+
+        ?>
+      </div>
+
+    </nav>

@@ -13,9 +13,20 @@
 /* Navigation
 ================*/
 
-.nav {
+nav {
   @include clearfix;
   background: $nav-color;
+  color: #fff;
+  #menu-button {
+    display: block;
+    text-align: right;
+    padding: 10px 0;
+  }
+  #nav {
+    display: none;
+    border-top: 1px solid #fff;
+    padding: 10px 0;
+  }
   a {
     @include link-colors(#fff);
     @include hover-link;
@@ -23,10 +34,19 @@
   }
   @media (min-width: 769px) {
     @include horizontal-list(10px, left);
-    padding: 20px 0;
+    padding: 15px 0;
     font-size: 24px;
+    #nav {
+      @include clearfix;
+      display: block;
+      border-top: none;
+    }
+    #menu-button {
+      display: none;
+    }
   }
 }
+
 
 /* Footer
 ================*/
