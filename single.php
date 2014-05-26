@@ -5,6 +5,10 @@
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <h1><?php the_title(); ?></h1>
+    <p class="meta">
+      By: <?php the_author(); ?> on <?php echo the_time( 'F, jS, Y' ); ?>
+      <a href="<?php comments_link(); ?>" class="right"><?php comments_number(); ?></a>
+    </p>
     <?php the_content(); ?>
 
   <?php endwhile; else : ?>
