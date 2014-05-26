@@ -22,13 +22,16 @@ nav {
     text-align: right;
     padding: 10px 0;
   }
+  ul {
+    margin-bottom: 0;
+  }
   #nav {
     display: none;
     border-top: 1px solid #fff;
     padding: 10px 0;
   }
   a {
-    @include link-colors(#fff);
+    @include link-colors(#fff, #fff);
     @include hover-link;
 
   }
@@ -59,4 +62,11 @@ footer {
   padding-top: 20px;
 }
 
-@include sticky-footer(100px, ".root", "#root_footer", "#footer")
+@include sticky-footer(100px, ".root", "#root_footer", "#footer");
+
+/* Blog
+================*/
+
+.excerpt {
+  margin-bottom: 30px;
+}

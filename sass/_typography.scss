@@ -7,6 +7,11 @@ body {
   color: $text-color;
 }
 
+a {
+  @include link-colors($link-color, $link-hover-color);
+  text-decoration: none;
+}
+
 h1 {
   @include adjust-font-size-to(48px);
 }
@@ -31,8 +36,16 @@ h6 {
   @include adjust-font-size-to(16px);
 }
 
-p {
+p, ul, ol {
   @include trailer;
+}
+
+ul {
+  list-style: circle;
+}
+
+ol {
+  list-style: decimal;
 }
 
 nav, footer {
@@ -50,4 +63,9 @@ blockquote {
   font-style: italic;
   padding-left: 20px;
   margin-left: -25px;
+}
+
+.meta {
+  color: #5b5b5b;
+  border-bottom: 1px solid #ccc;
 }

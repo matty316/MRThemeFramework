@@ -89,64 +89,90 @@ body {
 }
 
 /* line 10, ../sass/_typography.scss */
+a {
+  color: #5585ff;
+  text-decoration: none;
+}
+/* line 24, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #88aaff;
+}
+
+/* line 15, ../sass/_typography.scss */
 h1 {
   font-size: 3em;
   line-height: 1.5em;
 }
 
-/* line 14, ../sass/_typography.scss */
+/* line 19, ../sass/_typography.scss */
 h2 {
   font-size: 2.25em;
   line-height: 1.33333em;
 }
 
-/* line 18, ../sass/_typography.scss */
+/* line 23, ../sass/_typography.scss */
 h3 {
   font-size: 1.5em;
   line-height: 2em;
 }
 
-/* line 22, ../sass/_typography.scss */
+/* line 27, ../sass/_typography.scss */
 h4 {
   font-size: 1.3125em;
   line-height: 2.28571em;
 }
 
-/* line 26, ../sass/_typography.scss */
+/* line 31, ../sass/_typography.scss */
 h5 {
   font-size: 1.125em;
   line-height: 1.33333em;
 }
 
-/* line 30, ../sass/_typography.scss */
+/* line 35, ../sass/_typography.scss */
 h6 {
   font-size: 1em;
   line-height: 1.5em;
 }
 
-/* line 34, ../sass/_typography.scss */
-p {
+/* line 39, ../sass/_typography.scss */
+p, ul, ol {
   margin-bottom: 1.5em;
 }
 
-/* line 38, ../sass/_typography.scss */
+/* line 43, ../sass/_typography.scss */
+ul {
+  list-style: circle;
+}
+
+/* line 47, ../sass/_typography.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 51, ../sass/_typography.scss */
 nav, footer {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
 
-/* line 43, ../sass/_typography.scss */
+/* line 56, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
 
-/* line 48, ../sass/_typography.scss */
+/* line 61, ../sass/_typography.scss */
 blockquote {
   border-left: 5px solid #3b3b3b;
   font-style: italic;
   padding-left: 20px;
   margin-left: -25px;
+}
+
+/* line 68, ../sass/_typography.scss */
+.meta {
+  color: #5b5b5b;
+  border-bottom: 1px solid #ccc;
 }
 
 /* line 1, ../sass/_layout.scss */
@@ -184,15 +210,23 @@ nav #menu-button {
   padding: 10px 0;
 }
 /* line 25, ../sass/_layout.scss */
+nav ul {
+  margin-bottom: 0;
+}
+/* line 28, ../sass/_layout.scss */
 nav #nav {
   display: none;
   border-top: 1px solid #fff;
   padding: 10px 0;
 }
-/* line 30, ../sass/_layout.scss */
+/* line 33, ../sass/_layout.scss */
 nav a {
   color: white;
   text-decoration: none;
+}
+/* line 24, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+nav a:hover {
+  color: white;
 }
 /* line 4, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 nav a:hover {
@@ -232,14 +266,14 @@ nav a:hover {
   nav li.last {
     padding-right: 0;
   }
-  /* line 39, ../sass/_layout.scss */
+  /* line 42, ../sass/_layout.scss */
   nav #nav {
     overflow: hidden;
     *zoom: 1;
     display: block;
     border-top: none;
   }
-  /* line 44, ../sass/_layout.scss */
+  /* line 47, ../sass/_layout.scss */
   nav #menu-button {
     display: none;
   }
@@ -247,7 +281,7 @@ nav a:hover {
 
 /* Footer
 ================*/
-/* line 54, ../sass/_layout.scss */
+/* line 57, ../sass/_layout.scss */
 footer {
   background: #3b3b3b;
   color: #fff;
@@ -279,4 +313,47 @@ html, body {
   clear: both;
   position: relative;
   height: 100px;
+}
+
+/* Blog
+================*/
+/* line 70, ../sass/_layout.scss */
+.excerpt {
+  margin-bottom: 30px;
+}
+
+/* Button
+=================*/
+/* line 4, ../sass/_components.scss */
+.btn {
+  background: #5585ff;
+  color: white;
+  padding: 10px;
+  border: 2px solid #3f63bf;
+  border-bottom-width: 5px;
+  box-shadow: inset 0 1px adjust-lighness(#5585ff, 10%);
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 24, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.btn:hover {
+  color: white;
+}
+/* line 13, ../sass/_components.scss */
+.btn:hover {
+  background: #4e7aea;
+}
+/* line 16, ../sass/_components.scss */
+.btn:active {
+  border-bottom-width: 2px;
+  -webkit-transform: translate(0px, 3px);
+  -moz-transform: translate(0px, 3px);
+  -ms-transform: translate(0px, 3px);
+  -o-transform: translate(0px, 3px);
+  transform: translate(0px, 3px);
+  margin-bottom: 3px;
 }
