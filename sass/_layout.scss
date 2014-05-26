@@ -39,6 +39,11 @@ nav {
     @include horizontal-list(10px, left);
     padding: 15px 0;
     font-size: 24px;
+    .sub-menu {
+  		display: none;
+    }
+
+  	
     #nav {
       @include clearfix;
       display: block;

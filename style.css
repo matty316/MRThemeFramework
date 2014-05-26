@@ -267,13 +267,17 @@ nav a:hover {
     padding-right: 0;
   }
   /* line 42, ../sass/_layout.scss */
+  nav .sub-menu {
+    display: none;
+  }
+  /* line 47, ../sass/_layout.scss */
   nav #nav {
     overflow: hidden;
     *zoom: 1;
     display: block;
     border-top: none;
   }
-  /* line 47, ../sass/_layout.scss */
+  /* line 52, ../sass/_layout.scss */
   nav #menu-button {
     display: none;
   }
@@ -281,7 +285,7 @@ nav a:hover {
 
 /* Footer
 ================*/
-/* line 57, ../sass/_layout.scss */
+/* line 62, ../sass/_layout.scss */
 footer {
   background: #3b3b3b;
   color: #fff;
@@ -317,7 +321,7 @@ html, body {
 
 /* Blog
 ================*/
-/* line 70, ../sass/_layout.scss */
+/* line 75, ../sass/_layout.scss */
 .excerpt {
   margin-bottom: 30px;
 }
