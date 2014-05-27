@@ -9,3 +9,4 @@ TODO
 * Image Gallery template
 * Most of the templates
 * Make it prettier
+* Sidebar

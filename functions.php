@@ -43,6 +43,8 @@ $args = array(
 );
 
 add_theme_support( 'custom-header', $args );
+add_theme_support( 'post-thumbnails' );
+
 
 function create_widget($name, $id, $description)
 {

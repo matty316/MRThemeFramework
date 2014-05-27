@@ -393,6 +393,19 @@ html, body {
   float: left;
 }
 
+/* Images
+================*/
+/* line 120, ../sass/_layout.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 125, ../sass/_layout.scss */
+.wp-post-image {
+  margin: 20px 0 0;
+}
+
 /* Grid
 ----------------------------------------------- */
 @media (min-width: 769px) {
