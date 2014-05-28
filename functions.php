@@ -24,7 +24,8 @@ function theme_js()
 
   $wp_scripts->add_data( 'html5_shiv', 'conditional', 'lt IE 9' );
   $wp_scripts->add_data( 'respond_js', 'conditional', 'lt IE 9' );
-
+  wp_enqueue_script( 'classie-js', get_template_directory_uri() . '/js/classie.js', array(jquery), '', true );
+  wp_enqueue_script( 'uisearch-js', get_template_directory_uri() . '/js/uisearch.js', array(jquery), '', true );
   wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array(jquery), '', true );
 
 }
@@ -61,3 +62,4 @@ function create_widget($name, $id, $description)
 
 create_widget( 'Front Page Left', 'front-left', 'Displays on the left of the front page' );
 create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the front page' );
+create_widget( 'Sidebar', 'sidebar', 'Side bar widget' );

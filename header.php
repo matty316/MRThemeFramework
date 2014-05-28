@@ -9,6 +9,8 @@
       <img src="<?php header_image(); ?>" alt="" />
     </div>
 
+    <?php get_search_form(); ?>
+
     <nav>
 
       <div class="container">

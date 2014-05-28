@@ -12,18 +12,24 @@
 
 /* Navigation
 ================*/
-body {
-  padding-top: 35px;
-}
+
 .admin-bar nav {
   margin-top: 45px;
   @media (min-width: 769) {
-    margin-top: 30px;
+
   }
 }
 
+#menu-button {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  .admin-bar & {
+    top: 45px;
+}
 nav {
   @include clearfix;
+  display: none;
   background: #fff;
   color: $text-color;
   position: absolute;
@@ -31,6 +37,7 @@ nav {
   left: 0;
   right: 0;
   @include box-shadow(0 1px 1px 0 #ccc);
+  z-index: 999;
   #menu-button {
     display: block;
     text-align: right;
@@ -65,8 +72,6 @@ nav {
       display: block;
       border-top: none;
     }
-    #menu-button {
-      display: none;
     }
   }
 }
@@ -79,10 +84,6 @@ nav {
     margin: 0 auto;
     display: block;
     width: 100%;
-    @include transition(all 0.3s ease-in-out);
-    &:hover {
-      @include scale(1.1);
-    }
   }
 }
 
@@ -134,3 +135,6 @@ footer {
   height: auto;
   margin: 20px 0 10px;
 }
+
+/* Widgets
+================*/
