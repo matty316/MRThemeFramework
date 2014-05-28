@@ -6,7 +6,7 @@
   margin: 0 auto;
   max-width: 85%;
   @media ( min-width: 769px ){
-    max-width: 600px;
+    max-width: 900px;
   }
 }
 
@@ -14,25 +14,23 @@
 ================*/
 body {
   padding-top: 35px;
-  @media (min-width: 769) {
-    padding-top: 0;
-  }
 }
 .admin-bar nav {
   margin-top: 45px;
   @media (min-width: 769) {
-    margin-top: 0;
+    margin-top: 30px;
   }
 }
 
 nav {
   @include clearfix;
-  background: $nav-color;
-  color: #fff;
+  background: #fff;
+  color: $text-color;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  @include box-shadow(0 1px 1px 0 #ccc);
   #menu-button {
     display: block;
     text-align: right;
@@ -41,6 +39,9 @@ nav {
   ul {
     margin-bottom: 0;
     list-style: none;
+    @media (min-width: 769) {
+      float: right;
+    }
   }
   #nav {
     display: none;
@@ -48,19 +49,16 @@ nav {
     padding: 10px 0;
   }
   a {
-    @include link-colors(#fff, #fff);
-    @include hover-link;
-
+    @include link-colors($text-color, adjust-lightness($text-color, 20%));
+    @include transition(all 0.3s ease-in-out);
   }
   @media (min-width: 769px) {
     @include horizontal-list(10px, left);
     padding: 15px 0;
-    font-size: 24px;
-    position: relative;
+    font-size: 16px;
+    position: fixed;
     .sub-menu {
-      display: none;    }
-    li:hover > .sub-menu {
-      display: block;
+      display: none;
     }
     #nav {
       @include clearfix;
@@ -74,11 +72,25 @@ nav {
 }
 
 .header-img {
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-  @media (min-width: 769px) {
-    width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    @include transition(all 0.3s ease-in-out);
+    &:hover {
+      @include scale(1.1);
+    }
+  }
+}
+
+#logo {
+  width: 50px;
+  @include transition(all 0.3s ease-in-out);
+  &:hover {
+    @include opacity(0.9);
   }
 }
 
@@ -117,11 +129,8 @@ footer {
 /* Images
 ================*/
 
-img {
+.wp-post-image {
   width: 100%;
   height: auto;
-}
-
-.wp-post-image {
-  margin: 20px 0 0;
+  margin: 20px 0 10px;
 }
