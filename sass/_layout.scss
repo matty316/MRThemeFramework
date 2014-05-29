@@ -16,17 +16,10 @@
 .admin-bar nav {
   margin-top: 45px;
   @media (min-width: 769) {
-
+    margin-top: 20px;
   }
 }
 
-#menu-button {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  .admin-bar & {
-    top: 45px;
-}
 nav {
   @include clearfix;
   display: none;
@@ -72,6 +65,8 @@ nav {
       display: block;
       border-top: none;
     }
+    #menu-button {
+      display: none;
     }
   }
 }

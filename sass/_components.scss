@@ -30,25 +30,3 @@
 
 /* Forms
 ================*/
-
-.sb-search {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  .admin-bar & {
-    top: 45px;
-  }
-}
-.sb-search.sb-search-open,
-.no-js .sb-search {
-  width: 400px;
-}
-
-.sb-icon-search {
-  background: $link-color;
-}
-
-.sb-search.sb-search-open .sb-icon-search,
-.no-js .sb-search .sb-icon-search {
-  background: shade($link-color, 20%);
-}
