@@ -38,8 +38,12 @@ nav {
     border-top: none;
   }
   a {
-    @include link-colors(#fff, adjust-lightness($link-color, 20%));
+    color: #fff;
     @include transition(all 0.3s ease-in-out);
+    &:hover {
+      color: #fff;
+      @include opacity(0.7);
+    }
   }
 
 }
@@ -59,16 +63,18 @@ nav {
   width: 50px;
   @include transition(all 0.3s ease-in-out);
   &:hover {
-    @include opacity(0.9);
+    @include scale(1.1);
   }
 }
-
-#menu-button i {
+#menu-button {
   position: absolute;
   top: 25px;
   left: 25px;
   width: 50px;
   height: 50px;
+}
+#menu-button i {
+
   background: $link-color;
   color: #fff;
   font-size: 25px;
@@ -80,5 +86,32 @@ nav {
   }
   &:hover {
     background: shade($link-color, 20%);
+  }
+}
+
+/* Side Navigation
+================*/
+
+#side-nav {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  text-align: center;
+  list-style: none;
+  @include lato;
+  background: $nav-color;
+  a {
+    color: #fff;
+  }
+  li {
+    padding: 20px;
+    border-bottom: 2px solid #fff;
+
+    &:hover {
+      background: shade($nav-color, 10%);
+    }
   }
 }

@@ -348,31 +348,33 @@ nav #nav {
 }
 /* line 40, ../sass/_nav.scss */
 nav a {
-  color: white;
+  color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 24, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 43, ../sass/_nav.scss */
 nav a:hover {
-  color: #f6f9ff;
+  color: #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
 }
 
-/* line 47, ../sass/_nav.scss */
+/* line 51, ../sass/_nav.scss */
 .header-img {
   height: 400px;
   overflow: hidden;
   margin-bottom: 30px;
 }
-/* line 51, ../sass/_nav.scss */
+/* line 55, ../sass/_nav.scss */
 .header-img img {
   margin: 0 auto;
   display: block;
   width: 100%;
 }
 
-/* line 58, ../sass/_nav.scss */
+/* line 62, ../sass/_nav.scss */
 #logo {
   width: 50px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -380,19 +382,26 @@ nav a:hover {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 61, ../sass/_nav.scss */
+/* line 65, ../sass/_nav.scss */
 #logo:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  opacity: 0.9;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
-/* line 66, ../sass/_nav.scss */
-#menu-button i {
+/* line 69, ../sass/_nav.scss */
+#menu-button {
   position: absolute;
   top: 25px;
   left: 25px;
   width: 50px;
   height: 50px;
+}
+
+/* line 76, ../sass/_nav.scss */
+#menu-button i {
   background: #90b9ff;
   color: #fff;
   font-size: 25px;
@@ -400,13 +409,43 @@ nav a:hover {
   text-align: center;
   display: block;
 }
-/* line 78, ../sass/_nav.scss */
+/* line 84, ../sass/_nav.scss */
 .admin-bar #menu-button i {
   top: 45px;
 }
-/* line 81, ../sass/_nav.scss */
+/* line 87, ../sass/_nav.scss */
 #menu-button i:hover {
   background: #7394cc;
+}
+
+/* Side Navigation
+================*/
+/* line 95, ../sass/_nav.scss */
+#side-nav {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  text-align: center;
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background: #90b9ff;
+}
+/* line 106, ../sass/_nav.scss */
+#side-nav a {
+  color: #fff;
+}
+/* line 109, ../sass/_nav.scss */
+#side-nav li {
+  padding: 20px;
+  border-bottom: 2px solid #fff;
+}
+/* line 113, ../sass/_nav.scss */
+#side-nav li:hover {
+  background: #81a6e5;
 }
 
 /* Grid

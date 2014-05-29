@@ -12,6 +12,17 @@
     <?php get_search_form(); ?>
     <a data-target="#" id="menu-button"><i class="fa fa-bars"></i></a>
 
+    <?php
+
+    $args = array(
+      'menu' => 'header-menu',
+      'container' => 'false',
+      'menu_id' => 'side-nav'
+    );
+
+    wp_nav_menu( $args );
+
+    ?>
     <nav>
 
       <div class="container">
