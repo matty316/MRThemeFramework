@@ -10,3 +10,4 @@ TODO
 * Most of the templates
 * Make it prettier
 * Sidebar
+* Parallax main background image 
