@@ -94,22 +94,27 @@ nav {
 
 #side-nav {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 300px;
   height: 100%;
   text-align: center;
   list-style: none;
+  font-size: 21px;
   @include lato;
   background: $nav-color;
   a {
+    display: inline-block;
     color: #fff;
+    width: 100%;
+    height: 100%;
   }
   li {
-    padding: 20px;
+    display: block;
     border-bottom: 2px solid #fff;
-
+    height: 75px;
+    line-height: 75px;
     &:hover {
       background: shade($nav-color, 10%);
     }

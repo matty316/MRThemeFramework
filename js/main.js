@@ -7,6 +7,11 @@ jQuery( function ($) {
   	var yPos = ( $(window).scrollTop()  );
   	if (yPos > 200) {
   		$('nav').slideDown();
+      $('#side-nav').hide('slow');
+      if ($('#menu-button').position().left != 25) {
+        $('#menu-button').animate({left:'=25px'});
+        left = true
+      }
   	} else {
   		$('nav').slideUp();
   	}
