@@ -37,12 +37,18 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 $args = array(
-	'default-image' => 'http://31.media.tumblr.com/67ce84549aa997de57666c179df8e062/tumblr_n5w6mqIkUB1st5lhmo1_1280.jpg',
+	'default-image' => get_template_directory_uri() . '/img/logo5.png',
 );
 
 add_theme_support( 'custom-header', $args );
 add_theme_support( 'post-thumbnails' );
 
+$args = array(
+	'default-image' => 'http://31.media.tumblr.com/67ce84549aa997de57666c179df8e062/tumblr_n5w6mqIkUB1st5lhmo1_1280.jpg',
+  'default-repeat'         => 'no-repeat',
+
+);
+add_theme_support( 'custom-background', $args );
 
 function create_widget($name, $id, $description)
 {

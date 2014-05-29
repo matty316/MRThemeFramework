@@ -1,0 +1,84 @@
+/* Navigation
+================*/
+
+.admin-bar nav {
+  margin-top: 45px;
+  @media (min-width: 769) {
+    margin-top: 20px;
+  }
+}
+
+nav {
+  @include clearfix;
+  display: none;
+  background: $nav-color;
+  color: #fff;
+  z-index: 999;
+  @include horizontal-list(10px, left);
+  padding: 15px 0;
+  font-size: 21px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  .sub-menu {
+    display: none;
+  }
+  ul {
+    margin-bottom: 0;
+    list-style: none;
+    float: right;
+  }
+  #nav {
+    display: none;
+    border-top: 1px solid #fff;
+    padding: 10px 0;
+    @include clearfix;
+    display: block;
+    border-top: none;
+  }
+  a {
+    @include link-colors(#fff, adjust-lightness($link-color, 20%));
+    @include transition(all 0.3s ease-in-out);
+  }
+
+}
+
+.header-img {
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+}
+
+#logo {
+  width: 50px;
+  @include transition(all 0.3s ease-in-out);
+  &:hover {
+    @include opacity(0.9);
+  }
+}
+
+#menu-button i {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  background: $link-color;
+  color: #fff;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  .admin-bar & {
+    top: 45px;
+  }
+  &:hover {
+    background: shade($link-color, 20%);
+  }
+}

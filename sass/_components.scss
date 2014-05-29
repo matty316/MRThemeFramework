@@ -30,3 +30,15 @@
 
 /* Forms
 ================*/
+label {
+  display: block;
+}
+input[type=text] {
+  border: none;
+  height: 30px;
+  background: #FFFDD6;
+}
+
+body.custom-background {
+  background: none !important;
+}

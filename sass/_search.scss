@@ -13,6 +13,9 @@
   line-height: 50px;
   text-align: center;
   display: block;
+  &:hover {
+    background: shade($link-color, 20%);
+  }
 }
 
 .search-submit {
@@ -37,7 +40,10 @@
 
 .search-container {
   position: absolute;
-  top: 45px;
+  top: 25px;
   right: 25px;
   width: 400px;
+  .admin-bar & {
+    top: 45px;
+  }
 }
