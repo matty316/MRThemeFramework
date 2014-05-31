@@ -5,15 +5,10 @@ jQuery( function ($) {
   $(window).scroll(function() {
 
   	var yPos = ( $(window).scrollTop()  );
-  	if (yPos > 200) {
-  		$('nav').slideDown();
-      $('#side-nav').hide('slow');
-      if ($('#menu-button').position().left != 25) {
-        $('#menu-button').animate({left:'=25px'});
-        left = true
-      }
+  	if (yPos > 300) {
+  		$('nav').addClass('transparent-background');
   	} else {
-  		$('nav').slideUp();
+  		$('nav').removeClass('transparent-background');
   	}
   });
 

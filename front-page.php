@@ -1,28 +1,22 @@
-<?php get_header(); ?>
+ <?php get_header(); ?>
+<div class="row">
+  <div class="col-8">
+    <div class="container page-body">
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<div class="container root">
+        <h1><?php the_title(); ?></h1>
+        <?php the_content(); ?>
 
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <?php endwhile; else : ?>
 
-    <h1><?php the_title(); ?></h1>
-    <?php the_content(); ?>
+        <h1>Sorry, there is no content to display!</h1>
 
-  <?php endwhile; else : ?>
-
-    <h1>Sorry, there is no content to display!</h1>
-
-  <?php endif; ?>
-
-  <div class="row">
-    <div class="col-6">
-      <?php if ( dynamic_sidebar( 'front-left' ) ) ?>
-    </div>
-    <div class="col-6">
-      <?php if (dynamic_sidebar( 'front-right')); ?>
+      <?php endif; ?>
     </div>
   </div>
 
-  <div id="root_footer"></div>
+  <?php get_sidebar(); ?>
+
 </div>
 
 <?php get_footer(); ?>

@@ -59,6 +59,10 @@ nav, footer, h1, h2, h3, h4, h5, h6  {
   @include lato;
 }
 
+h1, h2, h3, h4, h5, h6  {
+  color: $heading-color;
+}
+
 blockquote {
   border-left: 5px solid $text-color;
   font-style: italic;

@@ -1,0 +1,20 @@
+.input-styles {
+  border: 2px solid $input-color;
+  width: 100%;
+  &:focus {
+    outline: none;
+    border-color: adjust-lightness($input-color, 10%);
+  }
+}
+
+.rounded {
+  @include border-radius(5px);
+}
+
+.circle {
+  @include border-radius(50%);
+}
+
+.transparent-background {
+  background: rgba(#3b3b3b, 0.9);
+}

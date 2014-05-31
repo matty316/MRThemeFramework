@@ -44,7 +44,7 @@
     width: 12 / 12 * 100%;
   }
   .row {
-    max-width: 900px;
+    max-width: $max-width;
     clear: both;
     margin: 0 auto;
   }

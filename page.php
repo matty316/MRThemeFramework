@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="row">
   <div class="col-8">
-    <div class="container root">
+    <div class="container page-body">
 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -13,7 +13,6 @@
         <h1>Sorry, there is no content to display!</h1>
 
       <?php endif; ?>
-      <div id="root_footer"></div>
     </div>
   </div>
   <?php get_sidebar(); ?>

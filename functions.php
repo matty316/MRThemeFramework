@@ -5,7 +5,7 @@ function theme_styles()
 {
 
   wp_enqueue_style('radley', 'http://fonts.googleapis.com/css?family=Radley:400,400italic' );
-  wp_enqueue_style('lato', 'http://fonts.googleapis.com/css?family=Lato:100,300,100italic,300italic' );
+  wp_enqueue_style('lato', 'http://fonts.googleapis.com/css?family=Lato:100,300,400,900' );
   wp_enqueue_style('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' );
   wp_enqueue_style('main-styles', get_stylesheet_uri() );
 
@@ -44,8 +44,7 @@ add_theme_support( 'custom-header', $args );
 add_theme_support( 'post-thumbnails' );
 
 $args = array(
-	'default-image' => 'http://31.media.tumblr.com/67ce84549aa997de57666c179df8e062/tumblr_n5w6mqIkUB1st5lhmo1_1280.jpg',
-  'default-repeat'         => 'no-repeat',
+  'default-color' => 'f1f4f9'
 
 );
 add_theme_support( 'custom-background', $args );

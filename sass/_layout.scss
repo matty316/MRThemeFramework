@@ -6,8 +6,11 @@
   margin: 0 auto;
   max-width: 85%;
   @media ( min-width: 769px ){
-    max-width: 900px;
+    max-width: $max-width;
   }
+}
+.page-body {
+  margin: 50px auto;
 }
 
 
@@ -19,10 +22,10 @@ footer {
   color: #fff;
   text-align: center;
   font-size: 21px;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
-@include sticky-footer(100px, ".root", "#root_footer", "#footer");
+
 
 /* Blog
 ================*/
@@ -53,3 +56,7 @@ footer {
 
 /* Widgets
 ================*/
+
+.widget {
+  position: relative;
+}
