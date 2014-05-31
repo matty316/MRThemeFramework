@@ -14,7 +14,7 @@ header {
     vertical-align: middle;
     @include lato;
     h1 {
-      font-weight: 900;
+      font-weight: 300;
       color: #fff;
       font-size: 72px;
       @include text-shadow(3px 3px 5px #333);
@@ -59,7 +59,7 @@ nav {
     padding: 10px;
     @extend .rounded;
     &:hover {
-      color: $text-color;
+      color: #ccc;
       background: #fff;
     }
   }

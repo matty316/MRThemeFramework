@@ -3,7 +3,7 @@ $base-line-height: 27px;
 @include establish-baseline;
 
 body {
-  @include radley;
+  @include lato;
   color: $text-color;
 }
 

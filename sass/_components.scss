@@ -2,19 +2,26 @@
 =================*/
 
 .btn {
-  background: $link-color;
-  @include link-colors(#fff, #fff);
+  border: 2px solid $link-color;
+  @extend .rounded;
+  @include link-colors($link-color, #fff);
   padding: 5px 10px;
   display: inline-block;
-
+  @include transition(all 0.3s ease-in-out);
   @include lato;
   &:hover {
-    background: shade($link-color, 8%);
+    background: $link-color;
   }
   &:active {
     @include box-shadow(inset 0 0 3px 3px shade($link-color, 20%));
   }
 
+}
+input.btn {
+  background: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 /* Forms

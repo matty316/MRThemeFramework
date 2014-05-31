@@ -60,3 +60,17 @@ footer {
 .widget {
   position: relative;
 }
+
+.front-widgets {
+  text-align: center;
+  background: #fff;
+  padding: 50px 0;
+  i {
+    font-size: 100px;
+    display: block;
+    color: #fff;
+    background: $front-icons;
+    padding: 20px;
+    @extend .rounded;
+  }
+}
