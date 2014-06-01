@@ -257,7 +257,7 @@ blockquote {
 ================*/
 /* line 20, ../sass/_layout.scss */
 footer {
-  background: #2c3e50;
+  background: #24272b;
   color: #fff;
   text-align: center;
   font-size: 21px;
@@ -740,6 +740,13 @@ body {
 .page-body {
   background: #fff;
   padding: 60px;
+}
+
+/* Footer
+==================*/
+/* line 19, ../sass/_skin.scss */
+footer h3 {
+  color: #fff;
 }
 
 /* Sections
