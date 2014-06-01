@@ -32,6 +32,11 @@
        </div>
      </div>
    </section>
+   <section class="front-img">
+     <div>
+       <h1>Macbook!</h1>
+     </div>     
+   </section>
 
 
 <?php get_footer(); ?>

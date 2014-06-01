@@ -17,4 +17,7 @@
 
 .transparent-background {
   background: rgba(#3b3b3b, 0.9);
+  li a:hover {
+    color: #3b3b3b !important;
+  }
 }

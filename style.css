@@ -83,7 +83,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 10, ../sass/_classes.scss */
-.rounded, .front-widgets i, nav #nav a, .btn {
+.rounded, .btn, .front-widgets i {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -103,6 +103,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 18, ../sass/_classes.scss */
 .transparent-background {
   background: rgba(59, 59, 59, 0.9);
+}
+/* line 20, ../sass/_classes.scss */
+.transparent-background li a:hover {
+  color: #3b3b3b !important;
 }
 
 /* line 61, ../../../../../../../../Users/reedm/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
@@ -295,21 +299,6 @@ footer {
   position: relative;
 }
 
-/* line 64, ../sass/_layout.scss */
-.front-widgets {
-  text-align: center;
-  background: #fff;
-  padding: 50px 0;
-}
-/* line 68, ../sass/_layout.scss */
-.front-widgets i {
-  font-size: 100px;
-  display: block;
-  color: #fff;
-  background: #e74c3c;
-  padding: 20px;
-}
-
 /* Navigation
 ================*/
 /* line 4, ../sass/_nav.scss */
@@ -417,26 +406,26 @@ nav #nav a {
   transition: all 0.3s ease-in-out;
   padding: 10px;
 }
-/* line 61, ../sass/_nav.scss */
+/* line 60, ../sass/_nav.scss */
 nav #nav a:hover {
   color: #ccc;
   background: #fff;
 }
 
-/* line 69, ../sass/_nav.scss */
+/* line 68, ../sass/_nav.scss */
 .header-img {
   height: 400px;
   overflow: hidden;
   margin-bottom: 30px;
 }
-/* line 73, ../sass/_nav.scss */
+/* line 72, ../sass/_nav.scss */
 .header-img img {
   margin: 0 auto;
   display: block;
   width: 100%;
 }
 
-/* line 80, ../sass/_nav.scss */
+/* line 79, ../sass/_nav.scss */
 #logo {
   height: 50px;
   margin: 11px 21px 0 0;
@@ -445,7 +434,7 @@ nav #nav a:hover {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 84, ../sass/_nav.scss */
+/* line 83, ../sass/_nav.scss */
 #logo:hover {
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
@@ -454,7 +443,7 @@ nav #nav a:hover {
   transform: scale(1.1, 1.1);
 }
 
-/* line 88, ../sass/_nav.scss */
+/* line 87, ../sass/_nav.scss */
 #menu-button {
   position: absolute;
   top: 25px;
@@ -463,12 +452,12 @@ nav #nav a:hover {
   height: 50px;
   cursor: pointer;
 }
-/* line 95, ../sass/_nav.scss */
+/* line 94, ../sass/_nav.scss */
 .admin-bar #menu-button {
   top: 57px;
 }
 
-/* line 99, ../sass/_nav.scss */
+/* line 98, ../sass/_nav.scss */
 #menu-button i {
   background: #e74c3c;
   color: #fff;
@@ -477,18 +466,18 @@ nav #nav a:hover {
   text-align: center;
   display: block;
 }
-/* line 107, ../sass/_nav.scss */
+/* line 106, ../sass/_nav.scss */
 .admin-bar #menu-button i {
   top: 57px;
 }
-/* line 110, ../sass/_nav.scss */
+/* line 109, ../sass/_nav.scss */
 #menu-button i:hover {
   background: #b83c30;
 }
 
 /* Side Navigation
 ================*/
-/* line 118, ../sass/_nav.scss */
+/* line 117, ../sass/_nav.scss */
 #side-nav {
   display: none;
   position: fixed;
@@ -502,14 +491,14 @@ nav #nav a:hover {
   font-weight: 300;
   background: #e74c3c;
 }
-/* line 129, ../sass/_nav.scss */
+/* line 128, ../sass/_nav.scss */
 #side-nav a {
   display: inline-block;
   color: #fff;
   width: 100%;
   height: 100%;
 }
-/* line 135, ../sass/_nav.scss */
+/* line 134, ../sass/_nav.scss */
 #side-nav li {
   display: block;
   border-bottom: 1px solid #ed7669;
@@ -517,11 +506,11 @@ nav #nav a:hover {
   line-height: 48px;
   padding-left: 24px;
 }
-/* line 141, ../sass/_nav.scss */
+/* line 140, ../sass/_nav.scss */
 #side-nav li:hover {
   background: #cf4436;
 }
-/* line 145, ../sass/_nav.scss */
+/* line 144, ../sass/_nav.scss */
 .admin-bar #side-nav {
   top: 32px;
 }
@@ -751,4 +740,47 @@ body {
 .page-body {
   background: #fff;
   padding: 60px;
+}
+
+/* Sections
+================*/
+/* line 3, ../sass/_front-page.scss */
+.front-widgets {
+  text-align: center;
+  background: #fff;
+  padding: 50px 0;
+}
+/* line 7, ../sass/_front-page.scss */
+.front-widgets i {
+  font-size: 100px;
+  display: block;
+  color: #fff;
+  margin: 0 auto;
+  line-height: 150px;
+  background: #e74c3c;
+  height: 150px;
+  width: 150px;
+}
+
+/* line 20, ../sass/_front-page.scss */
+.front-img {
+  background: url(http://37.media.tumblr.com/3afad829ce330a66b3bbb98831c1c393/tumblr_mx3tpto69r1st5lhmo1_1280.jpg) fixed;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+/* line 27, ../sass/_front-page.scss */
+.front-img div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 31, ../sass/_front-page.scss */
+.front-img h1 {
+  color: #fff;
+  border: 7px solid #fff;
+  padding: 21px;
+  display: inline-block;
+  font-weight: 400;
 }

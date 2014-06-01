@@ -57,7 +57,6 @@ nav {
     color: #fff;
     @include transition(all 0.3s ease-in-out);
     padding: 10px;
-    @extend .rounded;
     &:hover {
       color: #ccc;
       background: #fff;

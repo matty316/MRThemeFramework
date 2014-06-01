@@ -66,4 +66,9 @@ function create_widget($name, $id, $description)
 create_widget( 'Front Page Left', 'front-left', 'Displays on the left of the front page' );
 create_widget( 'Front Page Center', 'front-center', 'Displays in the center of the front page' );
 create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the front page' );
+
 create_widget( 'Sidebar', 'sidebar', 'Side bar widget' );
+
+create_widget( 'Footer Left', 'footer-left', 'Displays on the left of the footer' );
+create_widget( 'Footer Center', 'footer-center', 'Displays in the center of the footer' );
+create_widget( 'Footer Right', 'footer-right', 'Displays on the right of the footer' );
